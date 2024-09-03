@@ -1,0 +1,3 @@
+runtime: python39  # or the Python version you are using
+
+entrypoint: gunicorn -b :$PORT app:app  # app refers to app.py file and the "app" object inside. main.py file is taken by default by app engine.
